@@ -46,6 +46,9 @@ void findschool(FILE* csv, int s)
     case 14:
       fprintf(csv, "Dundalk High School");
       break;
+    case 15:
+      fprintf(csv, "Owings Mills High School");
+      
     }
 }
 
