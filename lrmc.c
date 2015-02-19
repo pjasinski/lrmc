@@ -7,7 +7,6 @@ int main(void)
   int committee;
   int a = 0;
   FILE* csv = fopen("./lrmc.csv", "w");
-  fprintf(csv, "fname,lname,school,committee\n");
     if (csv != NULL)
       {
 	while (a == 0)
@@ -27,6 +26,7 @@ int main(void)
 	      printf("Enter school number: ");
 	      scanf("%d", &school);
 	      findschool(csv, school);
+	      fprintf(csv, "\n");
 
 	      printf("Done?");
 	      scanf("%d", &a);
